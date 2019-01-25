@@ -1,8 +1,11 @@
 var path = require('path');
+var express = require('express');
+var router = express.Router();
 
 module.exports = function (app) {
     app.get("/", function(req, res) {
-        // If the user already has an account send them to the home page
         res.render(path.join(__dirname, "../views/index.handlebars"));
       });
     };
+
+    
