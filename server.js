@@ -24,6 +24,7 @@ app.engine(
 app.set("view engine", "handlebars");
 
 require("./routes/html-routes.js")(app);
+require("./routes/api-routes.js")(app);
 
 // listen on port 3000
 db.sequelize.sync().then(function(){
